@@ -2,13 +2,13 @@ import tensorflow as tf
 
 class Network:
     """
-    Build a physics informed neural network (PINN) model for Burgers' equation.
+    Build a physics informed neural network (PINN) model for KdV equation.
     """
 
     @classmethod
     def build(cls, num_inputs=2, layers=[48,48,48,48], activation='tanh', num_outputs=1):
         """
-        Build a PINN model for Burgers' equation with input shape (t, x) and output shape u(t, x).
+        Build a PINN model for KdV equation with input shape (t, x) and output shape u(t, x).
         Args:
             num_inputs: number of input variables. Default is 2 for (t, x).
             layers: number of hidden layers.
