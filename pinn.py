@@ -23,7 +23,7 @@ class PINN:
 
     def build(self):
         """
-        Build a PINN model for Burgers' equation.
+        Build a PINN model for KdV equation.
         Returns:
             PINN model for the projectile motion with
                 input: [ (t, x) relative to equation,
