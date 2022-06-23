@@ -3,7 +3,7 @@ from layer import GradientLayer
 
 class PINN:
     """
-    Build a physics informed neural network (PINN) model for Burgers' equation.
+    Build a physics informed neural network (PINN) model for KdV equation.
     Attributes:
         network: keras network model with input (t, x) and output u(t, x).
         nu: kinematic viscosity.
