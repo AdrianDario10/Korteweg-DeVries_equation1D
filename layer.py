@@ -3,7 +3,7 @@ import tensorflow as tf
 
 class GradientLayer(tf.keras.layers.Layer):
     """
-    Custom layer to compute derivatives for Burgers' equation.
+    Custom layer to compute derivatives for KdV equation.
     Attributes:
         model: keras network model.
     """
@@ -19,7 +19,7 @@ class GradientLayer(tf.keras.layers.Layer):
 
     def call(self, tx):
         """
-        Computing 1st and 3rd2nd derivatives for Burgers' equation.
+        Computing 1st and 3rd2nd derivatives for KdV equation.
         Args:
             x: input variable.
         Returns:
